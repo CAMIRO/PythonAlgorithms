@@ -1,2 +1,2 @@
 # PythonBasicAlgorithms
- Basic set of problem resolving Algorithms (functions).
+ Basic set of problem solving Algorithms (functions).
