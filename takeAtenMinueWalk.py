@@ -21,6 +21,7 @@ def is_valid_walk(walk):
     s = 0
     w = 0
     e = 0
+    
     for x in walk:
         if x == 'n':
             n += 1
@@ -30,12 +31,31 @@ def is_valid_walk(walk):
             w += 1
         elif x == 'e':
             e += 1
+    total_minutes = n + s + w + e
 
-    if (n - s == 0 and n + s < 11) and (w - e == 0 and w + e < 11):
+    if (n - s == 0) and (w - e == 0) and ( total_minutes > 9 and total_minutes < 11):
         return True
     else : return False
 
 
 
 if __name__ == '__main__':
-    print(is_valid_walk(['w','e','w','e','w','e','w','e','w','e','w','e']))
+    print(is_valid_walk(['e', 'e', 'e', 's', 'n', 'w', 'w', 'w', 'n', 's']))
+
+
+
+# another approaches :
+
+# approach 1: 
+#     def isValidWalk(walk):
+#     return len(walk) == 10 and walk.count('n') == walk.count('s') and walk.count('e') == walk.count('w')
+
+
+# approach 2 :
+
+#     def isValidWalk(walk):
+#         if (walk.count('n') == walk.count('s') and 
+#             walk.count('e') == walk.count('w') and
+#             len(walk) == 10):
+#                 return True
+#         return False
