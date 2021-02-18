@@ -47,13 +47,13 @@ if __name__ == '__main__':
 # another approaches :
 
 # approach 1: 
-#     def isValidWalk(walk):
+#     def is_valid_walk(walk):
 #     return len(walk) == 10 and walk.count('n') == walk.count('s') and walk.count('e') == walk.count('w')
 
 
 # approach 2 :
 
-#     def isValidWalk(walk):
+#     def is_valid_walk(walk):
 #         if (walk.count('n') == walk.count('s') and 
 #             walk.count('e') == walk.count('w') and
 #             len(walk) == 10):
