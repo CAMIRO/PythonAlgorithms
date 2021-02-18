@@ -20,5 +20,13 @@ if __name__ == '__main__':
 
 
 # another approaches:
+
+# approach 1: 
 # def to_jaden_case(string):        
 #     return " ".join(word.capitalize() for word in string.split())
+
+# approach 2: 
+# import string
+
+# def to_jaden_case(NonJadenStrings):
+#     return string.capwords(NonJadenStrings)
