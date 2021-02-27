@@ -13,3 +13,9 @@ def order(sentence):
 
 if __name__ == '__main__':
     print(order('is2 Thi1s T4est 3a'))
+
+
+# diff approach:
+
+# def order(sentence):
+#     return " ".join(sorted(sentence.split(), key=lambda x: int(filter(str.isdigit, x))))
